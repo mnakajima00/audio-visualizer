@@ -48,9 +48,9 @@ function renderFrame() {
     canvasCtx.fill();
 
     for (var i = 0; i < bufferLength; i++) {
-        //Divide circle to equal parts for bars
         let bar_height = dataArray[i]*2;
 
+        //Start of each bar and the end
         let x = centerX + Math.cos(deg*i)* (radius);
         let y = centerY + Math.sin(deg*i) * (radius);
         let x_end = centerX + Math.cos(deg*i)*(radius + bar_height);
