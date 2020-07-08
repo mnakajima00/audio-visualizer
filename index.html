@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css" />
+    </head>
+    <body>
+        <audio src="sound.mp3"></audio>
+
+        <!-- CANVAS -->
+        <canvas id="canvas"></canvas>
+        <!-- PLAY/PAUSE BUTTON & UPLOAD AUDIO-->
+        <div class="buttons">
+            <ul>
+                <li><button data-playing="false" role="switch" aria-checked="false">Play</button></li>
+                <li><input type="file" id="uploadedAudio" name="audio" accept="audio/mp3"></li>
+            </ul>
+        </div>
+
+        <!-- JAVASCRIPT FILE -->
+        <script type="text/javascript" src="index.js"></script>
+    </body>
+</html>
